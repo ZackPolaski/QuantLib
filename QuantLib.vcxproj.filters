@@ -340,6 +340,9 @@
     <Filter Include="experimental\asian">
       <UniqueIdentifier>{0abb3851-b409-4ea6-8e55-120d00a9fcdb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cashflows\coupons">
+      <UniqueIdentifier>{97b0f440-a882-4f0e-ab7b-96a81cbe061e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ql\methods\all.hpp">
@@ -504,91 +507,22 @@
     <ClInclude Include="ql\cashflows\all.hpp">
       <Filter>cashflows</Filter>
     </ClInclude>
-    <ClInclude Include="ql\cashflows\averagebmacoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\capflooredcoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\capflooredinflationcoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
     <ClInclude Include="ql\cashflows\cashflows.hpp">
       <Filter>cashflows</Filter>
     </ClInclude>
     <ClInclude Include="ql\cashflows\cashflowvectors.hpp">
       <Filter>cashflows</Filter>
     </ClInclude>
-    <ClInclude Include="ql\cashflows\cmscoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\conundrumpricer.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\coupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\couponpricer.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\digitalcmscoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\digitalcoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\digitaliborcoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
     <ClInclude Include="ql\cashflows\dividend.hpp">
       <Filter>cashflows</Filter>
     </ClInclude>
-    <ClInclude Include="ql\cashflows\duration.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\fixedratecoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\floatingratecoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\iborcoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
     <ClInclude Include="ql\cashflows\indexedcashflow.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\inflationcoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\inflationcouponpricer.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\overnightindexedcoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\rangeaccrual.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\rateaveraging.hpp">
       <Filter>cashflows</Filter>
     </ClInclude>
     <ClInclude Include="ql\cashflows\replication.hpp">
       <Filter>cashflows</Filter>
     </ClInclude>
     <ClInclude Include="ql\cashflows\simplecashflow.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\subperiodcoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\timebasket.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\yoyinflationcoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\zeroinflationcashflow.hpp">
       <Filter>cashflows</Filter>
     </ClInclude>
     <ClInclude Include="ql\indexes\all.hpp">
@@ -3072,9 +3006,6 @@
     <ClInclude Include="ql\experimental\coupons\digitalcmsspreadcoupon.hpp">
       <Filter>experimental\coupons</Filter>
     </ClInclude>
-    <ClInclude Include="ql\cashflows\lineartsrpricer.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
     <ClInclude Include="ql\experimental\coupons\lognormalcmsspreadpricer.hpp">
       <Filter>experimental\coupons</Filter>
     </ClInclude>
@@ -3785,12 +3716,6 @@
     <ClInclude Include="ql\userconfig.hpp" />
     <ClInclude Include="ql\version.hpp" />
     <ClInclude Include="ql\volatilitymodel.hpp" />
-    <ClInclude Include="ql\cashflows\cpicoupon.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
-    <ClInclude Include="ql\cashflows\cpicouponpricer.hpp">
-      <Filter>cashflows</Filter>
-    </ClInclude>
     <ClInclude Include="ql\instruments\cpicapfloor.hpp">
       <Filter>instruments</Filter>
     </ClInclude>
@@ -4411,16 +4336,94 @@
     </ClInclude>
     <ClInclude Include="ql\math\integrals\tanhsinhintegral.hpp">
       <Filter>math\integrals</Filter>
-    </ClInclude>    
+    </ClInclude>
     <ClInclude Include="ql\math\interpolations\chebyshevinterpolation.hpp">
       <Filter>math\interpolations</Filter>
-    </ClInclude>    
+    </ClInclude>
     <ClInclude Include="ql\pricingengines\vanilla\qdfpamericanengine.hpp">
       <Filter>pricingengines\vanilla</Filter>
-    </ClInclude>    
+    </ClInclude>
     <ClInclude Include="ql\pricingengines\vanilla\qdplusamericanengine.hpp">
       <Filter>pricingengines\vanilla</Filter>
-    </ClInclude>    
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\averagebmacoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\capflooredcoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\capflooredinflationcoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\cmscoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\conundrumpricer.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\coupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\couponpricer.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\cpicoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\cpicouponpricer.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\digitalcmscoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\digitalcoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\digitaliborcoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\duration.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\fixedratecoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\floatingratecoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\iborcoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\inflationcoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\inflationcouponpricer.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\lineartsrpricer.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\overnightindexedcoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\rangeaccrual.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\rateaveraging.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\subperiodcoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\timebasket.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\yoyinflationcoupon.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\cashflows\zeroinflationcashflow.hpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ql\methods\montecarlo\brownianbridge.cpp">
@@ -4450,88 +4453,22 @@
     <ClCompile Include="ql\methods\lattices\trinomialtree.cpp">
       <Filter>methods\lattices</Filter>
     </ClCompile>
-    <ClCompile Include="ql\cashflows\averagebmacoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\capflooredcoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\capflooredinflationcoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
     <ClCompile Include="ql\cashflows\cashflows.cpp">
       <Filter>cashflows</Filter>
     </ClCompile>
     <ClCompile Include="ql\cashflows\cashflowvectors.cpp">
       <Filter>cashflows</Filter>
     </ClCompile>
-    <ClCompile Include="ql\cashflows\cmscoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\conundrumpricer.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\coupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\couponpricer.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\digitalcmscoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\digitalcoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\digitaliborcoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
     <ClCompile Include="ql\cashflows\dividend.cpp">
       <Filter>cashflows</Filter>
     </ClCompile>
-    <ClCompile Include="ql\cashflows\duration.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\fixedratecoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\floatingratecoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\iborcoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
     <ClCompile Include="ql\cashflows\indexedcashflow.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\inflationcoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\inflationcouponpricer.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\overnightindexedcoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\rangeaccrual.cpp">
       <Filter>cashflows</Filter>
     </ClCompile>
     <ClCompile Include="ql\cashflows\replication.cpp">
       <Filter>cashflows</Filter>
     </ClCompile>
     <ClCompile Include="ql\cashflows\simplecashflow.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\subperiodcoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\timebasket.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\yoyinflationcoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\zeroinflationcashflow.cpp">
       <Filter>cashflows</Filter>
     </ClCompile>
     <ClCompile Include="ql\indexes\bmaindex.cpp">
@@ -6160,9 +6097,6 @@
     <ClCompile Include="ql\experimental\coupons\digitalcmsspreadcoupon.cpp">
       <Filter>experimental\coupons</Filter>
     </ClCompile>
-    <ClCompile Include="ql\cashflows\lineartsrpricer.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
     <ClCompile Include="ql\experimental\coupons\lognormalcmsspreadpricer.cpp">
       <Filter>experimental\coupons</Filter>
     </ClCompile>
@@ -6631,12 +6565,6 @@
     <ClCompile Include="ql\termstructure.cpp" />
     <ClCompile Include="ql\timegrid.cpp" />
     <ClCompile Include="ql\version.cpp" />
-    <ClCompile Include="ql\cashflows\cpicoupon.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
-    <ClCompile Include="ql\cashflows\cpicouponpricer.cpp">
-      <Filter>cashflows</Filter>
-    </ClCompile>
     <ClCompile Include="ql\instruments\cpicapfloor.cpp">
       <Filter>instruments</Filter>
     </ClCompile>
@@ -7143,6 +7071,81 @@
     </ClCompile>
     <ClCompile Include="ql\pricingengines\vanilla\qdplusamericanengine.cpp">
       <Filter>pricingengines\vanilla</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\averagebmacoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\capflooredcoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\capflooredinflationcoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\cmscoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\conundrumpricer.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\coupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\couponpricer.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\cpicoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\cpicouponpricer.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\digitalcmscoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\digitalcoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\digitaliborcoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\duration.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\fixedratecoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\floatingratecoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\iborcoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\inflationcoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\inflationcouponpricer.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\lineartsrpricer.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\overnightindexedcoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\rangeaccrual.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\subperiodcoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\timebasket.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\yoyinflationcoupon.cpp">
+      <Filter>cashflows\coupons</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\cashflows\zeroinflationcashflow.cpp">
+      <Filter>cashflows\coupons</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

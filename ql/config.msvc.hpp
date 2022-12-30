@@ -47,6 +47,13 @@
 
 // conditionally work around compiler glitches
 #define QL_PATCH_MSVC
+#if (_MSC_VER == 1500)
+# define QL_PATCH_MSVC90
+#elif (_MSC_VER >= 1600)
+# define QL_PATCH_MSVC100
+#endif
+
+#define BOOST_ALL_NO_LIB
 
 // Compilation on the x64 platform throws a lot of warnings assigning
 // QuantLib::Size == size_t (64 bit) to QuantLib::Integer == int (32
